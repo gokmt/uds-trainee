@@ -1,3 +1,10 @@
-Colocar o texto de ser programador em caixa branca
+git config --global user.email ""
+git config --global user.user.name ""
 
-ver as classes por id
+git init
+git remote add origin ""
+
+git status
+git add .
+git commit -m ""
+git push origin master
