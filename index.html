@@ -7,7 +7,6 @@
   <style>
   .fundo {
     background-image: url("https://www.pixelstalk.net/wp-content/uploads/2016/04/Stars-wallpaper-HD-desktop.jpg");
-    color: white;
     z-index: -1;
     position: absolute;
     animation-duration: 10s;
@@ -26,33 +25,39 @@
   }
 
   .img1 {
-      border: 10px solid black;
+    border: 10px solid black;
+    border-radius: 10px;
   }
 
   .box1 {
-  background-color: #dcdcdc;
-  width: 200px;
-  margin: 25px auto;
-  padding: 25px;
-  border: 5px solid black;
-  border-radius: 10px;
-  color: black;
-  font-size: 14px;
-  text-align: center;
+    background-color: #dcdcdc;
+    width: 200px;
+    margin: 25px auto;
+    padding: 25px;
+    border: 5px solid black;
+    border-radius: 10px;
+    color: black;
+    font-size: 12px;
+    font-family: verdana;
+    text-align: center;
   }
 
   @keyframes turn {
     from {
       transform:rotate(0deg);
     }
-      to {
-        transform:rotate(360deg);
-      }
+    to {
+      transform:rotate(360deg);
     }
+  }
 
   .corpo {
     position: relative;
     text-align: center;
+    color: #ffffff;
+    font-size: 12px;
+    font-family: verdana;
+    white-space: normal;
   }
 
   </style>
@@ -60,30 +65,34 @@
   <title>Aula 01</title>
 
 </head>
-  <body>
+<body>
 
-    <div class="fundo"></div>
+  <div class="fundo"></div>
 
-    <div class="corpo">
-      <h1>Aline Vieira</h1>
-      Aline Maria Vieira da Silva <br>
-      21 Anos
+  <div class="corpo">
+    <h1>Aline Vieira</h1>
+    Aline Maria Vieira da Silva
+    <p>21 Anos</p>
 
     <div><p>
-        <img class="img1" src="https://media.licdn.com/dms/image/C4D03AQEPG1tiHfDMuA/profile-displayphoto-shrink_200_200/0?e=1525266000&v=alpha&t=PHqrMkOiR22BOFrbFgLfxf9DQBs8WIrllyBFLZ-jxQ0">
+      <img class="img1" src="https://media.licdn.com/dms/image/C4D03AQEPG1tiHfDMuA/profile-displayphoto-shrink_200_200/0?e=1525266000&v=alpha&t=PHqrMkOiR22BOFrbFgLfxf9DQBs8WIrllyBFLZ-jxQ0">
     </p></div>
 
     <div class="box1">
-        <p>Porque você quer aprender programação ? </p><br>
-        "Quero aprender a programar porque me sinto realizada quando escrevo um código e ele funciona, também porque, todo dia consigo aprender algo novo, e isso me motiva."
+      <p>Porque você quer aprender programação ? </p>
+      "Quero aprender a programar porque me sinto realizada quando escrevo um código e ele funciona, também porque, todo dia consigo aprender algo novo, e isso me motiva."
     </div>
 
     <div>
-        <a target="_blank" href="https://pt-br.facebook.com/OnAlineVieira">Facebook</a><br>
-        <a target="_blank" href="www.linkedin.com/in/onalinevieira">LinkedIn</a><br>
+      Um pouco sobre mim!
+      <p>
+        <a target="_blank" href="https://www.instagram.com/misaokumura_in/">Instagram</a>
+        <a target="_blank" href="https://br.linkedin.com/in/onalinevieira">LinkedIn</a>
         <a target="_blank" href="https://github.com/misaokumura">GitHub</a>
+      </p>
     </div>
-</div>
-    </body>
 
-    </html>
+  </div>
+</body>
+
+</html>
