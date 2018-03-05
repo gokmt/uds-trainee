@@ -11,3 +11,7 @@ git push origin master
 
 
 https://gist.github.com/julianobailao
+
+redimencionar a imagem em tamanho proporcional
+adicionar as outras imagens e textos
+como fazer identação pelo atom
