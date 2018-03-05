@@ -1,0 +1,31 @@
+  body {
+  background-image: url("D:/Aline/uds-trainee/exerciciosComplementares/01/site/imagens/background.png");
+  background-repeat: repeat;
+  padding: 0px;
+  margin: 0px;
+  width:100%;
+  height: 100%;
+  font-family: verdana;
+  font-size: 14px;
+  color: #000000;
+}
+
+.iconeSobre {
+  max-width: 50px;
+  max-height: 50px;
+  position: absolute;
+  bottom: 20px;
+  right: 120px;
+}
+
+.iconeContato {
+  max-width: 50px;
+  max-height: 50px;
+  position: absolute;
+  bottom: 20px;
+  right: 50px;
+}
+
+.imagemPrincipal {
+  border-radius: 50%;
+}
