@@ -2,14 +2,12 @@ git config --global user.email ""
 git config --global user.user.name ""
 
 git init
-git remote add origin ""
+git remote add origin "link do repositorio no github"
 
 git status
 git add .
-git commit -m ""
+git commit -m "mensagem referente a alteração"
 git push origin master
 
 
 https://gist.github.com/julianobailao
-
-como dar br em css e substituir
