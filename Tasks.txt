@@ -12,5 +12,14 @@ git push origin master
 
 https://gist.github.com/julianobailao
 
-redimencionar a imagem em tamanho proporcional
+redimencionar a imagem em tamanho proporcional cortar redondo qualquer coisa
+
 como fazer identação pelo atom
+
+Resolver o posicionamento dos ícones 
+
+Clicar na foto e aparece maior
+
+alinhar formulario no centro e aumentar largura da mensagem
+
+mudar letra para batangche
