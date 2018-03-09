@@ -23,3 +23,8 @@ Clicar na foto e aparece maior
 alinhar formulario no centro e aumentar largura da mensagem
 
 mudar letra para batangche
+
+deixar nos campos 
+digite seu nome
+digite seu email
+digite sua mensagem
