@@ -104,16 +104,22 @@ console.log(dadosPessoaisAline);
 dadosPessoaisAline.splice(2, 1);
 console.log(dadosPessoaisAline);
 */
-endereços = ["Avenida Colombo", "5790", "Centro", "Maringa"];
 
 var dadosPessoais = {
   nome: "Aline",
   sobrenome: "Vieira",
-  endereço: [endereços],
-  showInfo: function(mostrarMinhasInformaçoes){
-    alert(" Seu nome é " + nome + " " + sobrenome + ", residente em " + endereço);
+  endereco: {
+    rua: "Avenida Colombo",
+    numero: "5790",
+    bairro: "Centro",
+    cidade: "Maringa",
+  },
+  showInfo: function() {
+    alert(" Seu nome é " + this.nome + " " + this.sobrenome + ", \n residente em " + this.endereco.rua + " " + this.endereco.numero + " " + this.endereco.bairro + " " + this.endereco.cidade);
   }
 };
+dadosPessoais.showInfo();
+console.log(dadosPessoais);
   </script>
 </body>
 </html>
