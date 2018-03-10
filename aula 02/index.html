@@ -1,0 +1,119 @@
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+
+  <title>Aula 02</title>
+</head>
+<body>
+  <script>
+  /*
+    alert('Hello World!');
+    var nome = "Aline Maria Vieira da Silva";
+    var idade = 21;
+    var sexoFeminino = true;
+    var peso = 56.600;
+    console.log(nome, idade, sexoFeminino, peso);
+    alert(" Olá, seu nome é " + nome + " você tem " + idade + " anos! ");
+
+    if (idade <= 18) {
+    alert('Novinho');
+  }
+    else if (idade <= 30) {
+      alert('Tiozinho(a)');
+    }
+    else {
+      alert('Tiozão(ona)')
+    }
+
+    var dia;
+  switch (new Date().getDay()) {
+      case 0:
+          dia = "Domingo";
+          break;
+      case 1:
+          dia = "Segunda-Feira";
+          break;
+      case 2:
+          dia = "Terça-Feira";
+          break;
+      case 3:
+          dia = "Quarta-Feira";
+          break;
+      case 4:
+          dia = "Quinta-Feira";
+          break;
+      case 5:
+          dia = "Sexta-feira";
+          break;
+      case 6:
+          dia = "Sábado";
+          break;
+  }
+  alert(" Salve Tiozão, hoje é " + dia + ", Dia de?");
+
+  function converteNumero(numero) {
+  switch (numero) {
+    case 1 :
+        alert('I');
+        break;
+    case 2:
+        alert('II');
+        break;
+    case 3:
+        alert('III');
+        break;
+    case 4:
+        alert('IV');
+        break;
+    case 5:
+        alert('V');
+        break;
+    case 6:
+        alert('VI');
+        break;
+    case 7:
+        alert('VII');
+        break;
+    case 8:
+        alert('VIII');
+        break;
+    case 9:
+        alert('IX');
+        break;
+    case 10:
+        alert('X');
+        break;
+    default:
+    alert('Número Inválido!');
+    break;
+  }
+}
+
+var scanner = parseInt (prompt ("Digite um número de 1 a 10 " ));
+converteNumero (scanner);
+
+for ( var i = 1; i < 10; i++) {
+        converteNumero(i);
+}
+
+
+var dadosPessoaisAline = ["Aline", ["Avenida Colombo", "5790", "Centro", "Maringa"], "(44) 99999-9999"];
+console.log(dadosPessoaisAline);
+dadosPessoaisAline[0] = "Aline Maria Vieira da Silva";
+console.log(dadosPessoaisAline);
+dadosPessoaisAline.splice(2, 1);
+console.log(dadosPessoaisAline);
+*/
+endereços = ["Avenida Colombo", "5790", "Centro", "Maringa"];
+
+var dadosPessoais = {
+  nome: "Aline",
+  sobrenome: "Vieira",
+  endereço: [endereços],
+  showInfo: function(mostrarMinhasInformaçoes){
+    alert(" Seu nome é " + nome + " " + sobrenome + ", residente em " + endereço);
+  }
+};
+  </script>
+</body>
+</html>

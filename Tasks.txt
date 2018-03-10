@@ -1,5 +1,5 @@
-git config --global user.email ""
-git config --global user.user.name ""
+git config --global user.email "misaokumura.in@gmail.com"
+git config --global user.user.name "misaokumura"
 
 git init
 git remote add origin "link do repositorio no github"
@@ -11,6 +11,7 @@ git push origin master
 
 
 https://gist.github.com/julianobailao
+https://gist.github.com/julianobailao/c8660155a9af759dea5dfe389b29dad4
 
 redimencionar a imagem em tamanho proporcional cortar redondo qualquer coisa
 
@@ -19,12 +20,3 @@ como fazer identação pelo atom
 Resolver o posicionamento dos ícones 
 
 Clicar na foto e aparece maior
-
-alinhar formulario no centro e aumentar largura da mensagem
-
-mudar letra para batangche
-
-deixar nos campos 
-digite seu nome
-digite seu email
-digite sua mensagem
