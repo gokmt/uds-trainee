@@ -27,7 +27,6 @@ geral {
 identar codigo
 deixar responsivo
 resolver o posicionamento dos ícones 
-aplicar conceitos novos de html, js, e css
+aplicar conceitos novos de html 5, js 7, e css 4
 comprimir imagens sem perder qualidade
-fonte não funfa
 }

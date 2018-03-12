@@ -37,6 +37,7 @@ input{
 input, textarea{
   width: 300px;
   border: 1px solid #999;
+  font: 12px josefinSansBold;
 }
 
 .nomeFormulario {
@@ -70,6 +71,7 @@ text-align: left;
   border-radius: 15px;
   margin-top: 20px;
   margin-left: 140px;
+  font: 12px josefinSansBold;
 }
 
 #campoNome {
@@ -91,7 +93,6 @@ text-align: left;
   color: #000000;
   padding: 10px;
   border-radius: 15px;
-  font-family: arial;
 }
 
 .gif {
