@@ -7,13 +7,14 @@
   justify-content: flex-start;
 }
 
+/* Primeira linha */
 .foto02 {
   border: 8px solid black;
   border-radius: 50%;
   width: 150px;
   height: 150px;
   position: absolute;
-  right: 150px;
+  right: 115px;
   top: 30px;
 }
 
@@ -23,17 +24,19 @@
   width: 150px;
   height: 150px;
   position: absolute;
-  right: 50px;
+  right: 15px;
   top: 30px;
 }
+/* Primeira linha */
 
+/* Segunda linha */
 .foto04 {
   border: 8px solid black;
   border-radius: 50%;
   width: 150px;
   height: 150px;
   position: absolute;
-  right: 350px;
+  right: 315px;
   top: 220px;
 }
 
@@ -43,7 +46,7 @@
   width: 150px;
   height: 150px;
   position: absolute;
-  right: 250px;
+  right: 215px;
   top: 220px;
 }
 
@@ -53,7 +56,7 @@
   width: 150px;
   height: 150px;
   position: absolute;
-  right: 150px;
+  right: 115px;
   top: 220px;
 }
 
@@ -63,17 +66,19 @@
   width: 150px;
   height: 150px;
   position: absolute;
-  right: 50px;
+  right: 15px;
   top: 220px;
 }
+/* Segunda linha */
 
+/* Terceira linha */
 .foto08 {
   border: 8px solid black;
   border-radius: 50%;
   width: 150px;
   height: 150px;
   position: absolute;
-  right: 450px;
+  right: 415px;
   top: 410px;
 }
 
@@ -83,7 +88,7 @@
   width: 150px;
   height: 150px;
   position: absolute;
-  right: 350px;
+  right: 315px;
   top: 410px;
 }
 
@@ -93,7 +98,7 @@
   width: 150px;
   height: 150px;
   position: absolute;
-  right:  250px;
+  right:  215px;
   top: 410px;
 }
 
@@ -103,7 +108,7 @@
   width: 150px;
   height: 150px;
   position: absolute;
-  right: 150px;
+  right: 115px;
   top: 410px;
 }
 
@@ -113,6 +118,7 @@
   width: 150px;
   height: 150px;
   position: absolute;
-  right: 50px;
+  right: 15px;
   top: 410px;
 }
+/* Terceira linha */

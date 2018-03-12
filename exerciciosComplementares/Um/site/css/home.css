@@ -12,8 +12,8 @@
   max-width: 120px;
   max-height: 120px;
   position: absolute;
-  top: 80px;
-  right: 380px;
+  top: 240px;
+  right: 490px;
   border-radius: 50%;
   border: 8px solid black;
 }
@@ -40,8 +40,8 @@
   max-width: 100px;
   max-height: 100px;
   position: absolute;
-  top: 380px;
-  right: 550px;
+  top: 460px;
+  right: 645px;
   border-radius: 50%;
   border: 8px solid black;
 }
@@ -54,8 +54,8 @@
   max-width: 100px;
   max-height: 100px;
   position: absolute;
-  top: 450px;
-  right: 280px;
+  top: 480px;
+  right: 250px;
   border-radius: 50%;
   border: 8px solid black;
 }
@@ -72,24 +72,24 @@ left: 25px;
 
 .textoSpotify {
 position: absolute;
-top: -70px;
-right: 460px;
+top: 5px;
+right: 350px;
 }
 
 .textoInstagram {
 position: absolute;
-top: 15px;
-right: 25px;
+top: 5px;
+right: 10px;
 }
 
 .textoLinkedin {
 position: absolute;
-top: 400px;
-right: 650px;
+top: 260px;
+right: 640px;
 }
 
 .textoGithub {
 position: absolute;
-top: 230px;
-right: 270px;
+top: 265px;
+right: 240px;
 }

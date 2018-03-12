@@ -31,6 +31,5 @@ deixar responsivo
 resolver o posicionamento dos ícones 
 aplicar conceitos novos de html, js, e css
 comprimir imagens sem perder qualidade
-h:over do github não funfa
 fonte não funfa
 }
