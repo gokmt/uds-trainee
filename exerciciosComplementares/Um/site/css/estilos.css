@@ -10,6 +10,11 @@
     text-align: center;
   }
 
+    @font-face {
+         font-family: BatangChe;
+         src: url('batang.ttf');
+    }
+
   ::-webkit-scrollbar-thumb {
   background: #000000;
   height:50px;
@@ -44,11 +49,6 @@
     position: absolute;
     top: 25px;
     left: 60px;
-  }
-
-  @font-face {
-       font-family: BatangChe;
-       src: url('Batang.ttf');
   }
 
   /* Pagina Home */

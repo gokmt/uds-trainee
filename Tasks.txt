@@ -13,10 +13,22 @@ git push origin master
 https://gist.github.com/julianobailao
 https://gist.github.com/julianobailao/c8660155a9af759dea5dfe389b29dad4
 
-redimencionar a imagem em tamanho proporcional cortar redondo qualquer coisa
 
-como fazer identação pelo atom
+home {
+redimensionar foto principal de modo proporcional
+diminuir tamanho dos baloes e posicionar de forma correta
+}
 
-Resolver o posicionamento dos ícones 
+sobre {
+aumentar o tamanho do texto sobre de modo que a letra fique maior (largura)
+redimensionar foto de modo proporcional
+clicar na foto e ampliar imagem (js)
+}
 
-Clicar na foto e aparece maior
+geral {
+identar codigo
+resolver o posicionamento dos ícones 
+aplicar conceitos novos de html, js, e css
+colocar uma outra fonte "mais legivel"
+comprimir imagens sem perder qualidade
+}
