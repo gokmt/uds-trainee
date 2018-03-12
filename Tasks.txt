@@ -26,10 +26,11 @@ clicar na foto e ampliar imagem (js)
 }
 
 geral {
-separar css por paginas
 identar codigo
+deixar responsivo
 resolver o posicionamento dos ícones 
 aplicar conceitos novos de html, js, e css
-colocar uma outra fonte "mais legivel"
 comprimir imagens sem perder qualidade
+h:over do github não funfa
+fonte não funfa
 }

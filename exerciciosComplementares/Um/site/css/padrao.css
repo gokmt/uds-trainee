@@ -1,18 +1,18 @@
     body {
     background-image: url("../imagens/background.png");
     background-repeat: repeat;
+    font: 12px josefinSansRegular;
     padding: 0px;
     margin: 0px;
     width:100%;
     height: 100%;
-    font-family: BatangChe;
     color: #bebebe;
     text-align: center;
   }
 
     @font-face {
-         font-family: BatangChe;
-         src: url('batang.ttf');
+         font-family: josefinSansRegular;
+         src: url("fontes/josefinSansRegular.ttf");
     }
 
   /* barra de rolagem */
