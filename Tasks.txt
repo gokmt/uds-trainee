@@ -26,6 +26,7 @@ clicar na foto e ampliar imagem (js)
 }
 
 geral {
+separar css por paginas
 identar codigo
 resolver o posicionamento dos ícones 
 aplicar conceitos novos de html, js, e css

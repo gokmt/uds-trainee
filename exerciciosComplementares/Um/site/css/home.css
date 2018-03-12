@@ -1,0 +1,85 @@
+.fotoPrincipal {
+  border: 8px solid black;
+  border-radius: 90%;
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  left: 130px;
+  top: 30px;
+  background-color: black;
+}
+
+.spotify {
+  max-width: 120px;
+  max-height: 120px;
+  position: absolute;
+  top: 80px;
+  right: 380px;
+  border-radius: 50%;
+  border: 8px solid black;
+  opacity: 1;
+}
+
+.spotify:hover{
+  opacity: 0.4;
+}
+
+.instagram {
+  max-width: 110px;
+  max-height: 110px;
+  position: absolute;
+  top: 200px;
+  right: 130px;
+  border-radius: 50%;
+  border: 8px solid black;
+}
+
+.linkedin {
+  max-width: 100px;
+  max-height: 100px;
+  position: absolute;
+  top: 380px;
+  right: 550px;
+  border-radius: 50%;
+  border: 8px solid black;
+}
+
+.github {
+  max-width: 100px;
+  max-height: 100px;
+  position: absolute;
+  top: 450px;
+  right: 280px;
+  border-radius: 50%;
+  border: 8px solid black;
+}
+
+.textoFotoPrincipal {
+position: absolute;
+top: 200px;
+left: -60px;
+}
+
+.textoSpotify {
+position: absolute;
+top: -70px;
+right: 460px;
+}
+
+.textoInstagram {
+position: absolute;
+top: 15px;
+right: 25px;
+}
+
+.textoLinkedin {
+position: absolute;
+top: 400px;
+right: 650px;
+}
+
+.textoGithub {
+position: absolute;
+top: 160px;
+right: 200px;
+}

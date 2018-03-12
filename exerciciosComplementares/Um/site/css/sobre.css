@@ -1,0 +1,118 @@
+.textoSobre {
+  position: absolute;
+  top: 20px;
+  left: 125px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.foto02 {
+  border: 8px solid black;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  right: 150px;
+  top: 30px;
+}
+
+.foto03 {
+  border: 8px solid black;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  right: 50px;
+  top: 30px;
+}
+
+.foto04 {
+  border: 8px solid black;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  right: 350px;
+  top: 220px;
+}
+
+.foto05 {
+  border: 8px solid black;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  right: 250px;
+  top: 220px;
+}
+
+.foto06 {
+  border: 8px solid black;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  right: 150px;
+  top: 220px;
+}
+
+.foto07 {
+  border: 8px solid black;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  right: 50px;
+  top: 220px;
+}
+
+.foto08 {
+  border: 8px solid black;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  right: 450px;
+  top: 410px;
+}
+
+.foto09 {
+  border: 8px solid black;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  right: 350px;
+  top: 410px;
+}
+
+.foto10 {
+  border: 8px solid black;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  right:  250px;
+  top: 410px;
+}
+
+.foto11 {
+  border: 8px solid black;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  right: 150px;
+  top: 410px;
+}
+
+.foto12 {
+  border: 8px solid black;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  right: 50px;
+  top: 410px;
+}
