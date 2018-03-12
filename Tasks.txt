@@ -16,11 +16,9 @@ https://gist.github.com/julianobailao/c8660155a9af759dea5dfe389b29dad4
 
 home {
 redimensionar foto principal de modo proporcional
-diminuir tamanho dos baloes e posicionar de forma correta
 }
 
 sobre {
-aumentar o tamanho do texto sobre de modo que a letra fique maior (largura)
 redimensionar foto de modo proporcional
 clicar na foto e ampliar imagem (js)
 }
