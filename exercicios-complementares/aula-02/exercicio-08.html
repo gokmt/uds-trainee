@@ -3,6 +3,11 @@
 <head>
 <meta charset="utf-8">
 <title>Exercício 08</title>
+<style>
+body {
+  white-space: pre;
+}
+</style>
 </head>
 
 <body>
@@ -20,5 +25,36 @@ Código 11: Noroeste
 
 Observação: Caso o código não seja nenhum dos especificados o produto deve ser encarado como Importado.
 </p>
+
+<script>
+function lerCodigo(codOrigem) {
+switch (codOrigem) {
+  case 1 :
+      return 'Sul';
+  case 2:
+      return 'Norte';
+  case 3:
+      return 'Leste';
+  case 4:
+      return 'Oeste';
+  case 5:
+  case 6:
+      return 'Nordeste';
+  case 7:
+  case 8:
+  case 9:
+      return 'Sudeste';
+  case 10:
+      return 'Centro-Oeste';
+  case 11:
+      return 'Noroeste';
+  default:
+      return 'Importado';
+}
+}
+codOrigem = parseInt (prompt("Digite o código de origem do produto: "));
+var resultado = lerCodigo(codOrigem);
+alert(resultado);
+</script>
 </body>
 </html>
