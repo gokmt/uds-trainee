@@ -2,28 +2,23 @@
   position: absolute;
   top: 20px;
   left: 125px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+}
+
+.foto02, .foto03, .foto04, .foto05, .foto06, .foto07, .foto08, .foto09, .foto10, .foto11, .foto12 {
+  border: 5px solid black;
+  border-radius: 50%;
+  position: absolute;
+  width: 150px;
+  height: 150px;
 }
 
 /* Primeira linha */
 .foto02 {
-  border: 8px solid black;
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
-  position: absolute;
   right: 115px;
   top: 30px;
 }
 
 .foto03 {
-  border: 8px solid black;
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
-  position: absolute;
   right: 15px;
   top: 30px;
 }
@@ -31,41 +26,21 @@
 
 /* Segunda linha */
 .foto04 {
-  border: 8px solid black;
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
-  position: absolute;
   right: 315px;
   top: 220px;
 }
 
 .foto05 {
-  border: 8px solid black;
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
-  position: absolute;
   right: 215px;
   top: 220px;
 }
 
 .foto06 {
-  border: 8px solid black;
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
-  position: absolute;
   right: 115px;
   top: 220px;
 }
 
 .foto07 {
-  border: 8px solid black;
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
-  position: absolute;
   right: 15px;
   top: 220px;
 }
@@ -73,51 +48,26 @@
 
 /* Terceira linha */
 .foto08 {
-  border: 8px solid black;
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
-  position: absolute;
   right: 415px;
   top: 410px;
 }
 
 .foto09 {
-  border: 8px solid black;
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
-  position: absolute;
   right: 315px;
   top: 410px;
 }
 
 .foto10 {
-  border: 8px solid black;
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
-  position: absolute;
   right:  215px;
   top: 410px;
 }
 
 .foto11 {
-  border: 8px solid black;
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
-  position: absolute;
   right: 115px;
   top: 410px;
 }
 
 .foto12 {
-  border: 8px solid black;
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
-  position: absolute;
   right: 15px;
   top: 410px;
 }

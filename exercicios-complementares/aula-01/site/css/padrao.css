@@ -29,18 +29,19 @@
   /* barra de rolagem*/
 
 /* icones */
+
+.iconeSobre, .iconeContato {
+  max-width: 50px;
+  max-height: 50px;
+  position: absolute;
+}
+
   .iconeSobre {
-    max-width: 50px;
-    max-height: 50px;
-    position: absolute;
     bottom: 20px;
     right: 120px;
   }
 
   .iconeContato {
-    max-width: 50px;
-    max-height: 50px;
-    position: absolute;
     bottom: 20px;
     right: 50px;
   }
