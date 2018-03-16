@@ -71,3 +71,14 @@ right: 640px;
 top: 265px;
 right: 240px;
 }
+
+.iconeSobre {
+  position: absolute;
+  right: 90px;
+  top: 570px;
+}
+.iconeContato {
+  position: absolute;
+  right: 20px;
+  top: 570px;
+}

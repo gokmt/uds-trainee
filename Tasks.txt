@@ -13,16 +13,6 @@ git push origin master
 https://gist.github.com/julianobailao
 https://gist.github.com/julianobailao/c8660155a9af759dea5dfe389b29dad4
 
-
-home {
-redimensionar foto principal de modo proporcional
-}
-
-sobre {
-redimensionar foto de modo proporcional
-clicar na foto e ampliar imagem (js)
-}
-
 geral {
 identar codigo
 deixar responsivo

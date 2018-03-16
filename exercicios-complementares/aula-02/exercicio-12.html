@@ -23,17 +23,31 @@ body {
 3 4 7 12 19 28 39 52 67 84
 </p>
 <script>
-/*
-for (var i = 10; i >= 1 ; i--) {
- alert(i);
-}*/
+var PrimeiroArray = [];
 
-while (var i = 0; i <= 100 ; i++) {
-  meuArrayBonitao = [];
-  numero = i * i;
-  meuArrayBonitao.push(numero);
-  alert(numero);
+for (var i = 10; i >= 1 ; i--) {
+ PrimeiroArray.push(i);
 }
+alert(PrimeiroArray);
+
+
+var segundoArray = [];
+for (var i = 0; i <= 10; i++) {
+    segundoArray.push(i * i);
+  }
+    alert(segundoArray);
+
+
+var TerceiroArray = [];
+
+for (var i = 1; i <= 5; i++) {
+  TerceiroArray.push(i);
+}
+for (var i = 1; i <= 5; i++) {
+  TerceiroArray.push(i * 10);
+  }
+alert(TerceiroArray);
+
 </script>
 </body>
 </html>

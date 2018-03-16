@@ -28,29 +28,15 @@
   }
   /* barra de rolagem*/
 
-/* icones */
-
-.iconeSobre, .iconeContato {
-  max-width: 50px;
-  max-height: 50px;
-  position: absolute;
-}
-
-  .iconeSobre {
-    bottom: 20px;
-    right: 120px;
-  }
-
-  .iconeContato {
-    bottom: 20px;
-    right: 50px;
+  .iconeSobre, .iconeContato {
+    width: 50px;
+    height: 50px
   }
 
   .iconeVoltar {
-    max-width: 40px;
-    max-height: 40px;
     position: absolute;
-    top: 25px;
-    left: 60px;
+    left: 50px;
+    top: 30px;
+    width: 40px;
+    height: 40px;
   }
-  /*icones*/
