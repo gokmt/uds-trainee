@@ -76,13 +76,13 @@ var produto = {
 produto.mostrarInformacoes();
 
 var venda = {
-  data: ,
-  cliente: ,
-  produtos: ,
-  desconto: ,
-  acrescimo: ,
+  data: undefined,
+  cliente: undefined,
+  produtos: undefined,
+  desconto: undefined,
+  acrescimo: undefined,
   addcliente: function(cliente) {
-    'add objeto cliente'
+    this.venda.cliente = getElementsByName('cliente');
   },
   addproduto: function(produto, quantidade) {
     'add objeto produto'
@@ -91,6 +91,7 @@ var venda = {
     'retorna o valor dos produtos e o valor total. valor total == (((soma de todos os produtos * qtde) - desconto) + acrescimo)'
   }
 }
+console.log(venda);
 </script>
 </body>
 </html>
