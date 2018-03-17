@@ -41,7 +41,7 @@ body {
 15.3.7. Deve ser possível adicionar n produtos, através de um método, que receba um objeto produto e uma quantidade,
 e adicione-os na propriedade produtos.
 15.3.8. Deve existir um método que retorne um objeto com as propriedades valor dos produtos, e valor total, sendo este,
-a soma dos valores produtos vezes a quantidade, menos o desconto, mais o acréscimo.
+a soma dos valores produtos, menos o desconto, mais o acréscimo.
 </p>
 <script>
 var cliente = {
@@ -68,30 +68,65 @@ cliente.mostrarInformacoes();
 var produto = {
   titulo: "Garrafa Termica Gatinho",
   descricao: "Garrafa térmica de aço inoxidável, 220ml, com formato de gatinho, na cor azul",
-  valor: "R$ 28,88",
+  valor: 28.88,
   mostrarInformacoes: function() {
-    alert("Produto:\n" + "\nNome: " + this.titulo + "\nValor: " + this.valor);
+    alert("Produto:\n" + "\nNome: " + this.titulo + "\nValor: R$ " + this.valor);
+  }
+};
+
+var produto2 = {
+  titulo: "CD AcDC",
+  descricao: "SHow",
+  valor: 18.88,
+  mostrarInformacoes: function() {
+    alert("Produto:\n" + "\nNome: " + this.titulo + "\nValor: R$ " + this.valor);
   }
 };
 produto.mostrarInformacoes();
 
 var venda = {
-  data: undefined,
-  cliente: undefined,
-  produtos: undefined,
-  desconto: undefined,
-  acrescimo: undefined,
-  addcliente: function(cliente) {
-    this.venda.cliente = getElementsByName('cliente');
+  data: null,
+  cliente: null,
+  produtos: [],
+  desconto: 5,
+  acrescimo: 2,
+
+  addCliente: function(cliente) {
+    this.cliente = cliente;
   },
-  addproduto: function(produto, quantidade) {
-    'add objeto produto'
+
+  addProduto: function(produto, quantidade) {
+    produtoVendido = {
+      quantidade: quantidade,
+      produto: produto
+    };
+    this.produtos.push(produtoVendido);
   },
-  dadosproduto: function() {
-    'retorna o valor dos produtos e o valor total. valor total == (((soma de todos os produtos * qtde) - desconto) + acrescimo)'
+
+  getValorVenda: function () {
+    valorTotal = 0;
+    this.produtos.forEach(function(item) {
+      valorTotal += (item.produto.valor * item.quantidade);
+    })
+    return valorTotal;
+  },
+
+  mostrarInformacoes: function() {
+    string =  "Valor dos Produtos:";
+    this.produtos.forEach(function(item) {
+      string += "\nProduto: " + item.produto.titulo
+    })
+    alert(string);
   }
 }
-console.log(venda);
+
+venda.addCliente(cliente);
+venda.addProduto(produto,5);
+venda.addProduto(produto2,32);
+venda.mostrarInformacoes();
+console.log(venda.getValorVenda());
+// console.log(produto);
+
 </script>
 </body>
 </html>
