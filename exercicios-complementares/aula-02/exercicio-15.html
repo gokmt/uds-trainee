@@ -65,7 +65,7 @@ var cliente = {
 };
 cliente.mostrarInformacoes();
 
-var produto = {
+var produto1 = {
   titulo: "Garrafa Termica Gatinho",
   descricao: "Garrafa térmica de aço inoxidável, 220ml, com formato de gatinho, na cor azul",
   valor: 28.88,
@@ -73,25 +73,34 @@ var produto = {
     alert("Produto:\n" + "\nNome: " + this.titulo + "\nValor: R$ " + this.valor);
   }
 };
+produto1.mostrarInformacoes();
 
 var produto2 = {
-  titulo: "CD AcDC",
-  descricao: "SHow",
-  valor: 18.88,
+  titulo: "McNífico Bacon",
+  descricao: "Uma fatia que faz a diferença",
+  valor: 17.00,
   mostrarInformacoes: function() {
     alert("Produto:\n" + "\nNome: " + this.titulo + "\nValor: R$ " + this.valor);
   }
 };
-produto.mostrarInformacoes();
+
+var produto3 = {
+  titulo: "Coca Cola",
+  descricao: "Mata a sua sede em um gole",
+  valor: 9.00,
+  mostrarInformacoes: function() {
+    alert("Produto:\n" + "\nNome: " + this.titulo + "\nValor: R$ " + this.valor);
+  }
+};
 
 var venda = {
   data: null,
   cliente: null,
   produtos: [],
-  desconto: 5,
-  acrescimo: 2,
+  desconto: 5.00,
+  acrescimo: 2.00,
 
-  addCliente: function(cliente) {
+  addCliente: function (cliente) {
     this.cliente = cliente;
   },
 
@@ -103,29 +112,29 @@ var venda = {
     this.produtos.push(produtoVendido);
   },
 
-  getValorVenda: function () {
+  mostrarInformacoes: function () {
+    variavelAux = 0;
     valorTotal = 0;
     this.produtos.forEach(function(item) {
-      valorTotal += (item.produto.valor * item.quantidade);
+      variavelAux += (item.produto.valor * item.quantidade);
+      valorTotal = variavelAux + this.venda.acrescimo - this.venda.desconto;
     })
-    return valorTotal;
-  },
-
-  mostrarInformacoes: function() {
-    string =  "Valor dos Produtos:";
+    string1 =  "Produtos: \n";
     this.produtos.forEach(function(item) {
-      string += "\nProduto: " + item.produto.titulo
+      string1 += ("\n" + item.quantidade + "  " + item.produto.titulo + " R$ " + item.produto.valor);
+      string2 = ("\n\nValor Total: \n" + valorTotal);
+      string3 = ("\n\nAcrescimo: " + this.venda.acrescimo + " (Taxa de Entrega)\n");
+      string4 = ("Desconto: " + this.venda.desconto + " (Cartão Fidelidade)");
     })
-    alert(string);
+    alert(string1 + string2 + string3 + string4);
   }
 }
 
 venda.addCliente(cliente);
-venda.addProduto(produto,5);
-venda.addProduto(produto2,32);
+venda.addProduto(produto1,2);
+venda.addProduto(produto2,4);
+venda.addProduto(produto3,4);
 venda.mostrarInformacoes();
-console.log(venda.getValorVenda());
-// console.log(produto);
 
 </script>
 </body>

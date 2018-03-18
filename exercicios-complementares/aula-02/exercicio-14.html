@@ -4,6 +4,11 @@
 <meta charset="utf-8">
 <title>Exercício 14</title>
 </head>
+<style>
+body {
+  white-space: pre;
+}
+</style>
 
 <body>
 <p>
@@ -28,15 +33,110 @@ que retorne a soma dos números existentes na propriedade números;
 Observação: Não deve ser possível adicionar valores não númericos na propriedade números;
 </p>
 <script>
-var objeto = {
-  numeros: [],
-
-  addNumero: function() {
-    this.numeros.push(1);
-  },
-}
-objeto.addNumero(numeros);
-console.log(objeto);
-</script>
+      var meuObjeto = {
+        numeros: [666],
+        adicionarNumero:function(numero){
+          if(parseInt(numero)){
+            meuObjeto.numeros.push(numero);
+            alert("O Número " + numero + " foi adicionado com sucesso!"+
+            "\nNovo conjunto: " + meuObjeto.numeros);
+          }else{
+            alert("Esse elemento não  pode ser inserido, somente números!");
+          }
+        },
+        verificarNumero:function(numero){
+          for (var i = 0; i <= meuObjeto.numeros.length; i++) {
+            if (meuObjeto.numeros[i] === numero) {
+              alert("O número " + numero + " está no array.");
+            }else {
+              alert("Infelizmente o número " + numero + " não está no array.");
+            }
+          }
+        },
+        removerNumero:function(numero){
+          var auxiliar = 1;
+          for (var i = 0; i <= meuObjeto.numeros.length; i++) {
+            if (meuObjeto.numeros[i] === numero) {
+              meuObjeto.numeros.splice(i,1);
+              auxiliar = auxiliar - auxiliar;
+              alert("O número " + numero + " foi removido com sucesso!");
+            }
+          }
+          if (auxiliar === 1) {
+            alert("O número " + numero + " não foi encontrado!");
+          }
+        },
+        numerosPositivos:function(){
+          var aux = [];
+          for (var i = 0; i <= meuObjeto.numeros.length; i++) {
+            if (meuObjeto.numeros[i] >= 0) {
+              aux.push(meuObjeto.numeros[i]);
+            }
+          }
+          if (aux.length <= 0) {
+            alert("Não foi encontrado número negativo!");
+          }else{
+            alert("Os números positivos são: " + aux);
+          }
+        },
+        numerosNegativos:function(){
+          var aux = [];
+          for (var i = 0; i <= meuObjeto.numeros.length; i++) {
+            if (meuObjeto.numeros[i] < 0) {
+              aux.push(meuObjeto.numeros[i]);
+            }
+          }
+          if (aux.length <= 0) {
+            alert("Não foi encontrado número negativo!");
+          }else{
+            alert("Os números negativos são: " + aux);
+          }
+        },
+        numerosPares:function(){
+          var aux = [];
+          for (var i = 0; i < meuObjeto.numeros.length; i++) {
+            if (meuObjeto.numeros[i]%2 === 0) {
+              aux.push(meuObjeto.numeros[i]);
+            }
+          }
+          if (aux.length <= 0) {
+            alert("Não foi encontrado nenhum número par!");
+          }else{
+            alert("Os números pares são: " + aux);
+          }
+        },
+        numerosImpares:function(){
+          var aux = [];
+          for (var i = 0; i < meuObjeto.numeros.length; i++) {
+            if (meuObjeto.numeros[i]%2 !== 0) {
+              aux.push(meuObjeto.numeros[i]);
+            }
+          }
+          if (aux.length <= 0) {
+            alert("Não foi encontrado nenhum número impar!");
+          }else{
+            alert("Os números impares são: " + aux);
+          }
+        },
+        somaNumeros:function(){
+          var soma = 0;
+          for (var i = 0; i < meuObjeto.numeros.length; i++) {
+            soma += meuObjeto.numeros[i];
+          }
+            alert("A soma dos números é: " + soma);
+        }
+      };
+      meuObjeto.adicionarNumero("r");
+      meuObjeto.adicionarNumero(500);
+      meuObjeto.adicionarNumero(135);
+      meuObjeto.adicionarNumero(-100);
+      meuObjeto.removerNumero(200);
+      alert(meuObjeto.numeros);
+      meuObjeto.numerosPositivos();
+      meuObjeto.numerosNegativos();
+      meuObjeto.numerosPares();
+      meuObjeto.numerosImpares();
+      meuObjeto.somaNumeros();
+      </script>
 </body>
 </html>
