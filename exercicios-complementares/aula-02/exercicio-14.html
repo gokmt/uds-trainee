@@ -14,129 +14,96 @@ body {
 <p>
 14. Crie um objeto que possua uma propriedade números, do tipo array. Esse objeto deve possuir métodos:
 
-que adicione um número a propriedade números;
+14.1. Que adicione um número a propriedade números.
+14.2. Que verifique se um número se o número recebido como parâmetro e alerte se ele está presente ou não na propriedade números.
+14.3. Que remova um número já existente ou alerte caso o número não esteja presente na propriedade números.
+14.4. Que retorne os números positivos existentes na propriedade números.
+14.5. Que retorne os números negativos existentes na propriedade números.
+14.6. Que retorne os números pares existentes na propriedade números.
+14.7. Que retorne os números impares existentes na propriedade números.
+14.8. Que retorne a soma dos números existentes na propriedade números.
 
-que verifique se um número se o número recebido como parâmetro e alerte se ele está presente ou não na propriedade números;
-
-que remova um número já existente ou alerte caso o número não esteja presente na propriedade números;
-
-que retorne os números positivos existentes na propriedade números;
-
-que retorne os números negativos existentes na propriedade números;
-
-que retorne os números pares existentes na propriedade números;
-
-que retorne os números impares existentes na propriedade números;
-
-que retorne a soma dos números existentes na propriedade números;
-
-Observação: Não deve ser possível adicionar valores não númericos na propriedade números;
+Observação: Não deve ser possível adicionar valores não númericos na propriedade números.
 </p>
 <script>
-      var meuObjeto = {
-        numeros: [666],
-        adicionarNumero:function(numero){
-          if(parseInt(numero)){
-            meuObjeto.numeros.push(numero);
-            alert("O Número " + numero + " foi adicionado com sucesso!"+
-            "\nNovo conjunto: " + meuObjeto.numeros);
+      var objeto = {
+        numeros: [],
+
+        adicionaNumero: function() {
+              this.numeros.push(prompt("Digite um número para salvar no array: "));
+             alert("O número salvo no array foi: " + this.numeros);
+            },
+
+            verificaNumero: function(numero) {
+              numero = prompt("Digite um número para verificar se ele está presente no array: ");
+                if (objeto.numeros == numero) {
+                  alert(numero + " está presente no array!!!");
+                } else {
+                  alert(numero + " não está presente no array!!!");
+                }
+            },
+
+        numerosPositivos: function() {
+            if (objeto.numeros >= 0) {
+              alert("O número positivo encontrado no array foi: " + this.numeros);
+            } else {
+              alert("Não foi encontrado número positivo no array!!!");
+            }
+          },
+
+          numerosNegativos: function() {
+          if (objeto.numeros < 0) {
+            alert("O número negativo encontrado no array foi: " + this.numeros);
+          } else {
+            alert("Não foi encontrado número negativo no array!!!");
+          }
+        },
+
+
+                removeNumero: function(numero) {
+                    numero = prompt("Digite um número para remove-lo do array: ");
+                    for (var i = 0; i < objeto.numeros.length; i++)
+                      if (objeto.numeros[i] == numero) {
+                        objeto.numeros.splice(i, 1);
+                        alert(numero + " foi removido do array!!!");
+                      }
+                      else {
+                        alert(numero + " não pode ser removido, porque não está presente no array!!!");
+                        }
+                },
+
+        numerosPares: function () {
+            if (objeto.numeros % 2 == 0) {
+            alert("O número par encontrado no array foi: " + this.numeros);
           }else{
-            alert("Esse elemento não  pode ser inserido, somente números!");
+            alert("Não foi encontrado número par no array!!!");
           }
         },
-        verificarNumero:function(numero){
-          for (var i = 0; i <= meuObjeto.numeros.length; i++) {
-            if (meuObjeto.numeros[i] === numero) {
-              alert("O número " + numero + " está no array.");
-            }else {
-              alert("Infelizmente o número " + numero + " não está no array.");
-            }
-          }
-        },
-        removerNumero:function(numero){
-          var auxiliar = 1;
-          for (var i = 0; i <= meuObjeto.numeros.length; i++) {
-            if (meuObjeto.numeros[i] === numero) {
-              meuObjeto.numeros.splice(i,1);
-              auxiliar = auxiliar - auxiliar;
-              alert("O número " + numero + " foi removido com sucesso!");
-            }
-          }
-          if (auxiliar === 1) {
-            alert("O número " + numero + " não foi encontrado!");
-          }
-        },
-        numerosPositivos:function(){
-          var aux = [];
-          for (var i = 0; i <= meuObjeto.numeros.length; i++) {
-            if (meuObjeto.numeros[i] >= 0) {
-              aux.push(meuObjeto.numeros[i]);
-            }
-          }
-          if (aux.length <= 0) {
-            alert("Não foi encontrado número negativo!");
+
+        numerosImpares: function () {
+            if (objeto.numeros % 2 !== 0) {
+            alert("O número ímpar encontrado no array foi: " + this.numeros);
           }else{
-            alert("Os números positivos são: " + aux);
+            alert("Não foi encontrado número ímpar no array!!!");
           }
         },
-        numerosNegativos:function(){
-          var aux = [];
-          for (var i = 0; i <= meuObjeto.numeros.length; i++) {
-            if (meuObjeto.numeros[i] < 0) {
-              aux.push(meuObjeto.numeros[i]);
-            }
-          }
-          if (aux.length <= 0) {
-            alert("Não foi encontrado número negativo!");
-          }else{
-            alert("Os números negativos são: " + aux);
-          }
-        },
-        numerosPares:function(){
-          var aux = [];
-          for (var i = 0; i < meuObjeto.numeros.length; i++) {
-            if (meuObjeto.numeros[i]%2 === 0) {
-              aux.push(meuObjeto.numeros[i]);
-            }
-          }
-          if (aux.length <= 0) {
-            alert("Não foi encontrado nenhum número par!");
-          }else{
-            alert("Os números pares são: " + aux);
-          }
-        },
-        numerosImpares:function(){
-          var aux = [];
-          for (var i = 0; i < meuObjeto.numeros.length; i++) {
-            if (meuObjeto.numeros[i]%2 !== 0) {
-              aux.push(meuObjeto.numeros[i]);
-            }
-          }
-          if (aux.length <= 0) {
-            alert("Não foi encontrado nenhum número impar!");
-          }else{
-            alert("Os números impares são: " + aux);
-          }
-        },
-        somaNumeros:function(){
+        /*
+        somaNumeros: function() {
           var soma = 0;
-          for (var i = 0; i < meuObjeto.numeros.length; i++) {
-            soma += meuObjeto.numeros[i];
+          for (var i = 0; i < objeto.numeros.length; i++) {
+            soma += bjeto.numeros[i];
           }
             alert("A soma dos números é: " + soma);
         }
-      };
-      meuObjeto.adicionarNumero("r");
-      meuObjeto.adicionarNumero(500);
-      meuObjeto.adicionarNumero(135);
-      meuObjeto.adicionarNumero(-100);
-      meuObjeto.removerNumero(200);
-      alert(meuObjeto.numeros);
-      meuObjeto.numerosPositivos();
-      meuObjeto.numerosNegativos();
-      meuObjeto.numerosPares();
-      meuObjeto.numerosImpares();
-      meuObjeto.somaNumeros();
+      */
+    }
+    objeto.adicionaNumero();
+    objeto.verificaNumero();
+    objeto.numerosPositivos();
+    objeto.numerosNegativos();
+    objeto.numerosPares();
+    objeto.numerosImpares();
+    objeto.removeNumero();
       </script>
 </body>
 </html>
