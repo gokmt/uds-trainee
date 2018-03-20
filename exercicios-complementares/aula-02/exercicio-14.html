@@ -30,30 +30,33 @@ Observação: Não deve ser possível adicionar valores não númericos na propr
         numeros: [],
 
         adicionaNumero: function() {
-          for (var i = 1; i <= 2; i++) {
-              this.numeros.push(prompt("Digite o " + i + "º número para salvar no array: "));
+          var numero = [];
+          index = [];
+          for (var contador = 1; contador <= 2; contador++) {
+          numero.push(prompt("Digite o " + contador + "º número para salvar no array: "));
           }
-          alert("Os números salvos no array foram: " + this.numeros);
+          for (var i = 0; i < numero.length; i++) {
+          if (!isNaN(numero[i]) == true) {
+            this.numeros.push(numero[i]);
+            index = objeto.numeros[i].indexOf(numero[i]);
+          } if (!isNaN(numero[i]) == false) {
+            alert("O caractere (" + numero[i] + ") é inválido");
+          } else {
+            alert("O número " + numero[i] + " foi salvo no array!!!")
+          }
+          }
           console.log(this.numeros);
-            },
+        },
 
             verificaNumeros: function(numero) {
-              var numero = [];
-              for (var contador = 1; contador <= 2; contador++) {
-                  numero.push(prompt("Digite o " + contador + "º número para verificar se ele está presente no array: "));
+              var numero = prompt("Digite um número para verificar se ele está presente no array: ");
+              var index = objeto.numeros.indexOf(numero);
+              if ( index > -1) {
+                alert("O número " + numero + " está presente no array!!!");
+              } else {
+                alert("O número " + numero + " não está presente no array!!!");
               }
-              console.log(numero);
-              var resultado = [];
-              for (var i = 0; i < numero.length; i++) {
-                if(objeto.numeros.indexOf(numero[i]) > -1) {
-                  resultado.push(numero[i]);
-                  alert(resultado[i] + " está presente no array!!!");
-                } else {
-                  alert(numero[i] + " não esta presente no array!!!");
-                }
-              }
-            },/*Quando o primeiro numero inserido não está no array,
-            e o segundo está, o segundo número aparece como undefined.*/
+            },
 
         numerosPositivos: function() {
           var numeroPositivo = [];
@@ -120,16 +123,15 @@ Observação: Não deve ser possível adicionar valores não númericos na propr
     },
 
     removeNumero: function(numero) {
-      numero = prompt("Digite um número para remove-lo do array: ");
-      for (var i = 0; i < objeto.numeros.length; i++) {
-      if (objeto.numeros[i].indexOf(numero) > -1) {
-        objeto.numeros.splice([i], 1);
-        alert(numero + " foi removido do array!!!");
-      } else if (objeto.numeros[i].indexOf(numero) == false) {
-        alert(numero + " não pode ser removido, porque não está presente no array!!!");
+      var numero = prompt("Digite um número para remove-lo do array: ");
+      var index = objeto.numeros.indexOf(numero);
+      if ( index > -1) {
+        objeto.numeros.splice(index, 1);
+        alert("O número " + numero + " foi removido do array!!!");
+      } else {
+        alert("O número " + numero + " não pode ser removido, pois não está presente no array!!!");
       }
-      }
-      console.log(this.numeros);
+      console.log(objeto.numeros);
     }
 }
     objeto.adicionaNumero();
