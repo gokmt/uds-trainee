@@ -72,7 +72,7 @@
       </div>
 
       <div class="opcao" id="containerEnviar">
-         <button type="button" name="button" id="botao">Apostar</button>
+         <button type="button" name="button" id="botao">Jogar</button>
          <div id="blockEnviar"></div>
        </div>
       <div id="quadro">
@@ -93,7 +93,7 @@
         var valorAposta = parseInt(document.getElementById("pontosApostados").value);
         var numAleatorio = Math.floor((Math.random() * 30) + 1);
         if (valorAposta <= 0) {
-          alert("Você não pode colocar números negativos");
+          alert("Você deve apostar apenas saldo positivo");
           document.getElementById("quadro").style.display = "none";
         }else if(valorAposta > pontos){
           alert("Você não pode apostar mais do que possui!");
